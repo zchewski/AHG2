@@ -1,0 +1,120 @@
+focus_tree = {
+	id = usa_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = USA
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+	initial_show_position = {
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = USA_olson
+		icon = "GFX_focus_USA_olson"
+		cost = 5
+		x = 1
+		y = 0
+		available = {
+			date > 1936.10.01
+		}
+		mutually_exclusive = {
+			focus = USA_four_more_years
+			focus = USA_borah
+			focus = USA_breckinridge
+		}
+		completion_reward = {
+			USA_floyd_b_olson = {
+				promote_character = yes
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+				long_name = "Farmer-Labor Party of the United States"
+				name = "Farmer-Labor"
+			}
+		}
+	}
+	focus = {
+		id = USA_four_more_years
+		icon = "GFX_focus_USA_four_more_years"
+		cost = 5
+		x = 3
+		y = 0
+		relative_position_id = USA_olson
+		available = {
+			date > 1936.10.01
+		}
+		mutually_exclusive = {
+			focus = USA_olson
+			focus = USA_borah
+			focus = USA_breckinridge
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+				long_name = "New Deal Coalition of the Democratic Party"
+				name = "New Deal Democrats"
+			}
+		}
+	}
+	focus = {
+		id = USA_borah
+		icon = "GFX_focus_USA_borah"
+		cost = 5
+		x = 3
+		y = 0
+		relative_position_id = USA_four_more_years
+		available = {
+			date > 1936.10.01
+		}
+		mutually_exclusive = {
+			focus = USA_olson
+			focus = USA_four_more_years
+			focus = USA_breckinridge
+		}
+		completion_reward = {
+			USA_william_e_borah = {
+				promote_character = yes
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+				long_name = "Republican Party"
+				name = "Republican Party"
+			}
+		}
+	}
+	focus = {
+		id = USA_breckinridge
+		icon = "GFX_focus_USA_breckinridge"
+		cost = 5
+		x = 3
+		y = 0
+		relative_position_id = USA_borah
+		available = {
+			date > 1936.10.01
+		}
+		mutually_exclusive = {
+			focus = USA_olson
+			focus = USA_four_more_years
+			focus = USA_borah
+		}
+		completion_reward = {
+			USA_henry_s_breckinridge = {
+				promote_character = yes
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+				long_name = "Opposition Faction of the Democratic Party"
+				name = "Opposition Democrats"
+			}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+characters = {
+	ABK_kirilli_bechvaya = {
+		name = "Kirill Bechvaya" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Kirill_Bechvaya
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+	}
+	ABK_nestor_lakoba = {
+		name = "Nestor Lakoba" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ABK/Nestor_Lakoba.png"
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			expire = "1950.1.1.1"
+			id = -1
+		}
+		field_marshal = {
+			traits = { trait_SOV_determined war_hero inspirational_leader }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	ABK_efrem_eshba = {
+		name = "Efrem Eshba" 
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ABK/Efrem_Eshba.png"
+			}
+		}
+		corps_commander = {
+			traits = { trait_SOV_determined }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+}
+	

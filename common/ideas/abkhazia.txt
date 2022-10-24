@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		abk_cornered_fox = {
+			allowed = {
+				original_tag = ABK
+			}
+			allowed_civil_war = { always = yes }
+			picture = abk_gfx_cornered_fox
+			modifier = {
+				army_morale_factor = 0.1
+				army_defence_factor = 0.3
+			}
+		}
+	}
+}

@@ -1,0 +1,131 @@
+ideas = {
+	country = {
+		FRA_idea_law_on_constitution = {
+			picture = law_on_constitution
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				tag = FRA #stays with main country
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = -0.25
+				political_power_gain = 0.25
+			}
+		}
+		FRA_land_reform_p = {
+			picture = FRA_land_reform
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				tag = FRA #stays with main country
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				#production_speed_industrial_complex_factor = 0.25
+			}
+		}
+		FRA_idea_business_interests_promoted_1 = {
+			picture = FRA_land_reform
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				tag = FRA #stays with main country
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				#consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.25
+			}
+		}
+		FRA_idea_business_interests_promoted_2 = {
+			picture = FRA_land_reform
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				tag = FRA #stays with main country
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_arms_factory_factor = 0.25
+			}
+		}
+		FRA_idea_provisional_govt_1 = {
+			picture = FRA_collapse_of_the_third_republic
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				tag = FRA #stays with main country
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				party_popularity_stability_factor = 0.15
+			}
+		}
+		FRA_idea_provisional_govt_2 = {
+			picture = FRA_collapse_of_the_third_republic
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				tag = FRA #stays with main country
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				party_popularity_stability_factor = 0.15
+				political_power_factor = 0.25
+			}
+		}
+		FRA_idea_provisional_govt_3 = {
+			picture = FRA_collapse_of_the_third_republic
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				tag = FRA #stays with main country
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				party_popularity_stability_factor = 0.15
+				political_power_factor = 0.25
+				stability_weekly = 0.01
+				drift_defence_factor = 0.3
+			}
+		}
+	}
+}

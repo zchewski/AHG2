@@ -1,0 +1,27 @@
+ideas = {
+	country = {
+		DEN_i_christian_x = {
+			modifier = {
+				stability_factor = 0.1
+				justify_war_goal_time = -0.2
+			}
+		}
+	}
+	country = {
+		DEN_i_nationalisms = {
+			modifier = {
+				stability_factor = -0.15
+			}
+		}
+	}
+	country = {
+		DEN_i_unstable_democracy = {
+			modifier = {
+				georgism_drift = 0.05
+				communism_drift = 0.05
+				fascism_drift = 0.05
+				neutrality_drift = 0.05
+			}
+		}
+	}
+}

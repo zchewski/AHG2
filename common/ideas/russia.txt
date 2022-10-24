@@ -1,0 +1,37 @@
+ideas = {
+	country = {
+		russia_catastrophe = {
+			allowed = {
+				original_tag = SOV
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = rus_gfx_catastrophe
+			modifier = {
+				stability_factor = -0.1
+				stability_weekly = -0.3
+				war_support_factor = -0.1
+				custom_modifier_tooltip = russia_catastrophe_tt
+			}
+			cancel = {
+				RUS_has_restored_russia = yes
+			}
+		}
+		russia_catastrophe_2 = {
+			allowed = {
+				original_tag = SOV
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = rus_gfx_catastrophe
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				custom_modifier_tooltip = russia_catastrophe_tt
+			}
+			cancel = {
+				RUS_has_restored_russia = yes
+			}
+		}
+	}
+}

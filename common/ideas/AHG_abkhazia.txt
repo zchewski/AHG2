@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+		idea_abk_lakobistan_1 = {
+			modifier = {
+				political_power_factor = 0.25
+				communism_drift = 0.05
+			}
+		}
+	}
+	country = {
+		idea_abk_lakobistan_2 = {
+			modifier = {
+				political_power_factor = 0.5
+				communism_drift = 0.05
+				consumer_goods_factor = 0.05
+				
+			}
+		}
+	}
+}

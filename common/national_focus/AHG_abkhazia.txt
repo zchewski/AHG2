@@ -1,0 +1,124 @@
+focus_tree = {
+	id = abkhaz_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ABK
+		}
+	}
+	continuous_focus_position = { x = 0 y = 1110 }
+	initial_show_position = {
+		x = 0
+	}
+	
+	focus = {
+		id = ABK_solidify_control
+		icon = ABK_GFX_commies
+		x = 3
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_trait = {
+				character = ABK_nestor_lakoba
+				ideology = leninism
+				trait = popular_figurehead2
+			}
+			add_ideas = {
+				idea_abk_lakobistan_1
+			}
+		}
+	}
+	focus = {
+		id = ABK_listen_to_the_people
+		icon = ABK_GFX_listen
+		prerequisite = { focus = ABK_solidify_control }
+		x = 1
+		y = 1
+		relative_position_id = ABK_solidify_control
+		cost = 5
+		completion_reward = {
+			swap_ruler_traits= {
+				remove = popular_figurehead2
+				add = popular_figurehead
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = ABK_compromise_w_bouge
+		icon = ABK_GFX_compromise
+		prerequisite = { focus = ABK_solidify_control }
+		x = -1
+		y = 1
+		relative_position_id = ABK_solidify_control
+		cost = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = idea_abk_lakobistan_1
+				add_idea = idea_abk_lakobistan_2
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ABK_armenians
+		icon = ABK_GFX_armenians
+		prerequisite = { focus = ABK_listen_to_the_people }
+		prerequisite = { focus = ABK_compromise_w_bouge }
+		x = -1
+		y = 1
+		relative_position_id = ABK_compromise_w_bouge
+		cost = 5
+		completion_reward = {
+			add_manpower = 25162
+			add_trait = {
+				character = ABK_nestor_lakoba
+				ideology = leninism
+				trait = ABK_arm_support
+			}
+		}
+	}
+	focus = {
+		id = ABK_greeks
+		icon = ABK_GFX_greeks
+		prerequisite = { focus = ABK_listen_to_the_people }
+		prerequisite = { focus = ABK_compromise_w_bouge }
+		x = 1
+		y = 1
+		relative_position_id = ABK_compromise_w_bouge
+		cost = 10
+		completion_reward = {
+			add_research_slot = 1
+			add_manpower = 15000
+		}
+		add_trait = {
+				character = ABK_nestor_lakoba
+				ideology = leninism
+				trait = ABK_greek_support
+		} 
+	}
+	focus = {
+		id = ABK_georgians
+		icon = ABK_GFX_georgians
+		prerequisite = { focus = ABK_listen_to_the_people }
+		prerequisite = { focus = ABK_compromise_w_bouge }
+		x = 1
+		y = 1
+		relative_position_id = ABK_listen_to_the_people
+		cost = 5
+		completion_reward = {
+			add_manpower = 47606
+			add_trait = {
+				character = ABK_nestor_lakoba
+				ideology = leninism
+				trait = ABK_georgian_support 
+			}
+		}
+	}
+}

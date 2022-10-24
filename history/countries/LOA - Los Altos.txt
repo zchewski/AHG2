@@ -1,0 +1,36 @@
+capital = 475
+
+oob = "LOA_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+
+set_country_flag = monroe_doctrine
+set_war_support = 0.1
+set_convoys = 10
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.2.14"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 98
+	fascism = 2
+}
+
+create_country_leader = {
+	name = "Aurelio Cortez"
+	desc = ""
+	picture = "gfx/leaders/LOA/Aurelio_Cortez.png"
+	expire = "1956.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
